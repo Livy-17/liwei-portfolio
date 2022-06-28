@@ -3,9 +3,9 @@ import { Heading, Text, Box, Flex, Button} from "@chakra-ui/react";
 
 const Intro = props => {
 
-  const toggleWorks = () => {
-    const viewportHeight = window.innerHeight;
-    window.scrollTo({top: 1420, behavior: "smooth"});
+  const toggleWorks = (e) => {
+    const worksDOM = document.getElementById('worksSection');
+    worksDOM.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
 
   return(

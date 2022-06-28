@@ -8,24 +8,18 @@ const Navbar = props => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const toggleAbout = () => {
-    const viewportHeight = window.innerHeight;
-    window.scrollTo({top: viewportHeight, behavior: "smooth"});
+    const aboutDOM = document.getElementById('aboutSection');
+    aboutDOM.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
 
   const toggleWorks = () => {
-    window.scrollTo({top: 1420, behavior: "smooth"});
+    const worksDOM = document.getElementById('worksSection');
+    worksDOM.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
-
-  const toggleWorksMobile = () => {
-    window.scrollTo({top: 1635, behavior: "smooth"})
-  }
 
   const toggleContact = () => {
-    window.scrollTo({top: 2940, behavior: "smooth"});
-  };
-  
-  const toggleContactMobile = () => {
-    window.scrollTo({top: 3780, behavior: "smooth"});
+    const contactDOM = document.getElementById('contactSection');
+    contactDOM.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
 
   const browserPattern = navigator.userAgent;
@@ -43,11 +37,11 @@ const Navbar = props => {
       {colorMode === "light" ? <MoonIcon mr={{base: "5px", md: "60px"}} h="45px" w="45px" p="15px 15px 15px 15px" borderRadius="5px" onClick={toggleColorMode} transition="all 0.2s ease-out" _hover={{base: {cursor: "pointer"}, md: {cursor: "pointer", bg: "purple"}}} /> : <SunIcon mr={{base: "5px", md: "60px"}} h="45px" w="45px" p="15px 15px 15px 15px" borderRadius="5px" onClick={toggleColorMode} transition="all 0.2s ease-out" _hover={{base: {cursor: "pointer"}, md: {cursor: "pointer", bg: "orange"}}} />}
       <Box display={{base: "inline-block", md: "none"}}>
         <Menu isLazy>
-          <MenuButton aria-label="Options" as={IconButton} rightIcon={<HamburgerIcon />} variant="ghost" size="lg" mr="10px" p="0 15px 0 0" _focus="none" />
+          <MenuButton aria-label="Options" as={IconButton} rightIcon={<HamburgerIcon />} variant="ghost" size="lg" mr="10px" p="0 15px 0 0" _focus={{border: 'none'}} />
           <MenuList>
             <MenuItem onClick={toggleAbout}>About</MenuItem>
-            <MenuItem onClick={toggleWorksMobile}>Works</MenuItem>
-            <MenuItem onClick={toggleContactMobile}>Contact</MenuItem>
+            <MenuItem onClick={toggleWorks}>Works</MenuItem>
+            <MenuItem onClick={toggleContact}>Contact</MenuItem>
           </MenuList>
         </Menu>
       </Box>

@@ -4,7 +4,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 
 const About = props => {
   return(
-    <Flex direction="column" bg={useColorModeValue("rgba(238, 229, 247, 1)", "")} pt={{base: "60px", md: "100px"}} align="center">
+    <Flex id='aboutSection' direction="column" bg={useColorModeValue("rgba(238, 229, 247, 1)", "")} pt={{base: "60px", md: "100px"}} align="center">
       <Heading mb="40px" fontSize="2xl">About Me</Heading>
       <Text fontSize="lg" w={{base: "300px", md: "760px"}} mb="60px">&nbsp;&nbsp;&nbsp;&nbsp;I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my works in the Works section.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Text>
@@ -13,7 +13,7 @@ const About = props => {
           <Heading fontSize="xl" mb="20px">Education</Heading>
           <Flex direction="column" align="center" gap="10px">
             <Text fontSize="md">MSc Statistics -- University of Sheffield 2021</Text>
-            <Text fontSieze="md">BSc Mathematics -- Shenzhen University 2019</Text>
+            <Text fontSize="md">BSc Mathematics -- Shenzhen University 2019</Text>
             <Text fontSize="md">Google Data Analyst Certificate</Text>
             <Text fontSize="md">Freecodecamp Frontend Developing Certificate</Text>
           </Flex>
