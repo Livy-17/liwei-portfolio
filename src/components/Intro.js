@@ -16,7 +16,7 @@ const Intro = props => {
           <source src='bgVideo.mp4' type="video/mp4" />
         </video>
       </Box>
-      <Flex direction='column' align='center' zIndex='99'>
+      <Flex direction='column' align='center' zIndex='2'>
         <Heading fontSize="2xl" color={{'2xl': 'white'}}>Hey, I'm Liwei Chen</Heading>
         <Text display={{base: "inherit", md: "none"}} fontSize="lg" mt="10px" >A Frontend focused Web Developer</Text>
         <Text display={{base: "none", md: "inherit"}} fontSize="lg" mt="20px" w="700px" textAlign="center" color={{'2xl': 'white'}} >A Frontend focused Web Developer building the Frontend of Websites and Web Applications that lead to the success of the overall product</Text>
