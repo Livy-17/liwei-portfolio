@@ -13,7 +13,7 @@ const App = () => {
     <Box w="100%" bg={useColorModeValue('rgba(240, 235, 229, 1)', 'rgba(21, 32, 43, 1)')} >
       <Flex direction="column" h="100vh" justifyContent="center">
         <Navbar />
-        <Intro />
+        {/* <Intro /> */}
       </Flex>
       <About />
       <Works />
