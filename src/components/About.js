@@ -5,7 +5,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 const About = props => {
 
   return(
-    <Flex id='aboutSection' direction="column" pt={{base: "70px", md: "220px"}} pb={{base: '20px', md: '80px'}} align="center" justifyContent='center' bg={useColorModeValue('', '')}>
+    <Flex id='aboutSection' direction="column" pt={{base: "130px", md: "220px"}} pb={{base: '80px', md: '80px'}} align="center" justifyContent='center' bg={useColorModeValue('', '')}>
       <Flex data-aos='fade-up' direction='column' align='center' justifyContent='center'>
         <Heading mb="40px" fontSize="2xl">About Me</Heading>
         <Text fontSize="lg" w={{base: "300px", md: "760px"}} mb="60px">&nbsp;&nbsp;&nbsp;&nbsp;I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my works in the Works section.<br />

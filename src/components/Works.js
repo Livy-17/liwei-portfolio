@@ -4,7 +4,7 @@ import Work from "./Work";
 
 const Works = props => {
   return (
-    <Flex id='worksSection' direction="column" align="center" pt={{base: "60px", md: "150px"}} pb={{base: "20px", md: "120px"}} bg={useColorModeValue('#F7F6F2','#1B2430')}>
+    <Flex id='worksSection' direction="column" align="center" pt={{base: "130px", md: "150px"}} pb={{base: "120px", md: "120px"}} bg={useColorModeValue('#F7F6F2','#1B2430')}>
       <Flex data-aos='flip-down' direction='column' align='center' justifyContent='center'>
         <Heading mb="40px" fontSize="2xl">Works</Heading>
         <Text fontSize="lg" mb="50px" w={{base: "300px", md: "760px"}}>&nbsp;&nbsp;&nbsp;&nbsp;Here you will find some of the personal and clients projects that I created with each project containing its own case study</Text>
