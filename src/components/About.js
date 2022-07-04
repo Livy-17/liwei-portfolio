@@ -1,22 +1,18 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Grid } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const About = props => {
 
-  AOS.init();
-
   return(
-    <Flex id='aboutSection' direction="column" pt={{base: "60px", md: "100px"}} align="center" justifyContent='center' bg={useColorModeValue('', '')}>
+    <Flex id='aboutSection' direction="column" pt={{base: "70px", md: "220px"}} pb={{base: '20px', md: '80px'}} align="center" justifyContent='center' bg={useColorModeValue('', '')}>
       <Flex data-aos='fade-up' direction='column' align='center' justifyContent='center'>
         <Heading mb="40px" fontSize="2xl">About Me</Heading>
         <Text fontSize="lg" w={{base: "300px", md: "760px"}} mb="60px">&nbsp;&nbsp;&nbsp;&nbsp;I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my works in the Works section.<br />
           &nbsp;&nbsp;&nbsp;&nbsp;I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Text>
       </Flex>
       <Flex direction={{base: "column", md: "row"}} gap={{base: "40px", md: "60px"}} mb={{base: "60px", md: "100px"}}>
-        <Flex data-aos='fade-right' direction="column" align="center" w="350px">
+        <Flex data-aos='fade-down' direction="column" align="center" w="350px">
           <Heading fontSize="xl" mb="20px">Education</Heading>
           <Flex direction="column" align="center" gap="10px">
             <Text fontSize="md">MSc Statistics -- University of Sheffield 2021</Text>
@@ -25,7 +21,7 @@ const About = props => {
             <Text fontSize="md">Freecodecamp Frontend Developing Certificate</Text>
           </Flex>
         </Flex>
-        <Flex data-aos='fade-left' direction="column" align="center" w="350px">
+        <Flex data-aos='fade-down' direction="column" align="center" justifyContent='center' w="350px">
           <Heading fontSize="xl" mb="20px">Skills</Heading>
           <Box align="center" fontSize="md">
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>HTML</Text>

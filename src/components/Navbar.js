@@ -27,7 +27,7 @@ const Navbar = props => {
   let isFirefox = wantedPattern.test(browserPattern);
 
   return(
-    <Box display="flex" alignItems="center" position="fixed" top="0" as="nav" w="100%" h="60px" bg={useColorModeValue("rgba(252, 248, 238, 0.2)", "")} sx={isFirefox ? {bg: "red"} : {backdropFilter: "blur(10px)"}} zIndex={10} >
+    <Box display="flex" alignItems="center" position="fixed" top="0" as="nav" w="100%" h="60px" bg={useColorModeValue("rgba(252, 248, 238, 0.2)", "")} sx={isFirefox ? {bg: ""} : {backdropFilter: "blur(10px)"}} zIndex={99}>
       <Heading as="a" href="" size='md' p="10px 10px 10px 10px" display="inline-block" mr="auto" ml={{base: "20px", md: "60px"}} _hover={{cursor: "pointer"}} >Liwei Chen</Heading>
       <HStack display={{base: "none", md: "inherit"}} spacing="20px" mr="60px">
         <Text onClick={toggleAbout} fontSize="lg" p="10px 20px 10px 20px" borderRadius="5px" transition="all 0.2s ease-out" _hover={{bg: "rgba(193, 203, 215, 1)", cursor: "pointer"}} >About</Text>
