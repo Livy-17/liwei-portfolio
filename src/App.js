@@ -1,5 +1,5 @@
 import React from 'react';
-import { VStack, Flex, Box, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Box, useColorModeValue } from "@chakra-ui/react";
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import About from './components/About';

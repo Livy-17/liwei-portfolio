@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Text, Grid } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 
 const About = props => {
