@@ -2,7 +2,7 @@ import React from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useColorModeValue, Divider, Accordion, AccordionButton, AccordionItem, AccordionPanel, AccordionIcon, Box, Flex, Grid, Stack, Heading, Text, Image, Button } from "@chakra-ui/react";
 
-const Work = props => {
+const Project = props => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -50,4 +50,4 @@ const Work = props => {
   )
 }
 
-export default Work;
+export default Project;

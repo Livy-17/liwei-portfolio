@@ -10,7 +10,7 @@ const Intro = props => {
   };
 
   return(
-    <Flex direction="column" align="center" justifyContent='center'>
+    <Flex direction="column" align="center" justifyContent='center' >
       <Box display={{base: 'none', '2xl': 'inherit'}} position='absolute' top='0' right='0' filter={useColorModeValue('brightness(80%)', 'brightness(30%)')}>
         <video autoPlay loop muted>
           <source src='bgVideo.mp4' type="video/mp4" />
