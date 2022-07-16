@@ -27,17 +27,17 @@ const ToTop = props => {
     <Box display={{base: "flex", md: showUp ? "block" : "none"}} justifyContent="center">
       <Box
       mb={{base: "20px", md: ""}}
-      border="solid 1px rgb(40, 40, 40)" 
       borderRadius="10px"
-      bg={useColorModeValue("rgba(191, 191, 191, 0.5)", "white")} 
-      color="gray" 
+      bg={useColorModeValue("rgba(191, 191, 191, 0.5)", "#656176")} 
+      color={useColorModeValue('gray', 'white')}
       position={{base: "static", md: "fixed"}} 
       right={{base: "", md: "60px"}} 
       bottom={{base: "", md: "60px"}} 
       zIndex="99" 
       onClick={toggleToTop} 
+      _hover={{ cursor: 'pointer' }}
       >
-        <ArrowUpIcon w={{base: "300px", md: "30px"}} h="30px" />
+        <ArrowUpIcon w={{base: "260px", md: "30px"}} h="30px" />
       </Box>
     </Box>
   )
