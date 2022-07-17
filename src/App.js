@@ -9,14 +9,14 @@ import Footer from './components/Footer';
 import ToTop from './components/ToTop';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Submitted from './Submitted';
 
 AOS.init();
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path={`${process.env.PUBLIC_URL}/`} element={
           <Box w='100vw' bg={useColorModeValue('', '')}>
@@ -35,7 +35,7 @@ const App = () => {
           <Submitted />
         } />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
