@@ -62,7 +62,7 @@ const Project = props => {
                   ))}
                 </Box>
                 <Text fontSize='xl' fontWeight='bold' mb='10px'>See Live</Text>
-                <a href={props.LiveLink}>
+                <a href={props.LiveLink} target='_blank' rel='noreferrer'>
                   <Button w='150px' _focus={{border: "none"}} _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>Live Link</Button>
                 </a>
               </Box>
