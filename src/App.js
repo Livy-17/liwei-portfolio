@@ -18,7 +18,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
+        <Route path="https://www.liweichen.info/" element={
           <Box w='100vw' bg={useColorModeValue('', '')}>
             <Navbar />
             <Flex direction="column" h="100vh" w='100%' justifyContent="center" alignItems='center' bg={useColorModeValue('#F7F6F2','#1B2430')}>
@@ -31,7 +31,7 @@ const App = () => {
             <Footer />
           </Box>
         } />
-        <Route path='/submitted' element={
+        <Route path='https://www.liweichen.info/submitted' element={
           <Submitted />
         } />
       </Routes>
