@@ -31,7 +31,7 @@ const App = () => {
             <Footer />
           </Box>
         } />
-        <Route path='/submmited' element={
+        <Route path='/submitted' element={
           <Submitted />
         } />
       </Routes>
