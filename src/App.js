@@ -9,14 +9,14 @@ import Footer from './components/Footer';
 import ToTop from './components/ToTop';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Submitted from './Submitted';
 
 AOS.init();
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="https://www.liweichen.info/" element={
           <Box w='100vw' bg={useColorModeValue('', '')}>
@@ -35,7 +35,7 @@ const App = () => {
           <Submitted />
         } />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
