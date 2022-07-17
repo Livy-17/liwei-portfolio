@@ -1,0 +1,35 @@
+.submit--button {
+  transition: 0.2s;
+}
+
+.submit--button:hover {
+  filter: brightness(90%);
+  transition: 0.2s;
+}
+
+.submit--button:active {
+  filter: brightness(80%);
+  transition: 0.2s;
+}
+
+.submit--container {
+  width: 300px;
+}
+
+@media (min-width: 400px) {
+  .submit--container {
+    width: 350px;
+  }
+}
+
+@media (min-width: 500px) {
+  .submit--container {
+    width: 450px;
+  }
+}
+
+@media (min-width: 600px) {
+  .submit--container {
+    width: 550px;
+  }
+}
