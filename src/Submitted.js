@@ -12,7 +12,7 @@ function Submitted() {
         </div>
         <p style={{ fontSize: '30px', fontWeight: 'bold', margin: '40px 0 10px 0' }}>Hey! Thank you!</p>
         <p style={{ fontSize: '20px', marginBottom: '40px', textAlign: 'center' }}>I will get in touch with you as soon as possible!</p>
-        <Link to={`${process.env.PUBLIC_URL}/`}>
+        <Link to='/'>
           <button className='submit--button' style={{ width: '200px', height: '40px', borderRadius: '5px', backgroundColor: useColorModeValue('#c1cbd7', '#656176') }}>Back to Portfolio Page</button>
         </Link>
       </div>
