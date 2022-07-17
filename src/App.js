@@ -18,7 +18,7 @@ const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path="https://www.liweichen.info/" element={
+        <Route path={`${process.env.PUBLIC_URL}/`} element={
           <Box w='100vw' bg={useColorModeValue('', '')}>
             <Navbar />
             <Flex direction="column" h="100vh" w='100%' justifyContent="center" alignItems='center' bg={useColorModeValue('#F7F6F2','#1B2430')}>
@@ -31,7 +31,7 @@ const App = () => {
             <Footer />
           </Box>
         } />
-        <Route path='https://www.liweichen.info/submitted' element={
+        <Route path={`${process.env.PUBLIC_URL}/submitted`} element={
           <Submitted />
         } />
       </Routes>
