@@ -1,6 +1,6 @@
 import React from "react";
 import { useDisclosure } from "@chakra-ui/react";
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useColorModeValue, useColorMode, Divider, Accordion, AccordionButton, AccordionItem, AccordionPanel, AccordionIcon, Box, Flex, Grid, Stack, Heading, Text, Image, Button } from "@chakra-ui/react";
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, useColorModeValue, useColorMode, Accordion, AccordionButton, AccordionItem, AccordionPanel, AccordionIcon, Box, Flex, Heading, Text, Image, Button } from "@chakra-ui/react";
 
 const Project = props => {
 
@@ -12,7 +12,7 @@ const Project = props => {
       <Flex direction="column" >
         <Flex direction={{base: "column", md: "row"}} gap={{base: "20px", md: "40px", lg: "60px"}} mb="20px" align={{base: "center", md: "inherit"}}>
           <Heading display={{base: "inherit", md: "none"}} fontSize="xl" mb="5px">{props.theHeading}</Heading>
-          <Image src={`Project_${props.ProjectName}_${props.DarkMode}_pic.webp`} alt='' w={{base: "250px", md: '300px', lg: "350px"}} objectFit="cover" fallbackSrc="https://via.placeholder.com/150" borderRadius="10px" boxShadow='0 0 5px gray' mb={{base: '10px', md: ''}}></Image>
+          <Image src={`Project_${props.ProjectName}_${props.DarkMode}_pic.webp`} alt='' width={{base: "250px", md: '300px', lg: "350px"}} height={{base: '130px', md: '156px', lg: '182px'}} objectFit="cover" fallbackSrc="https://via.placeholder.com/150" borderRadius="10px" boxShadow='0 0 5px gray' mb={{base: '10px', md: ''}}></Image>
           <Flex direction="column" justifyContent="center" align={{base: "center", md: "flex-start"}}>
             <Heading display={{base: "none", md: "inherit"}} fontSize="xl" mb="15px">{props.theHeading}</Heading>
             <Text fontSize="lg" w={{base: "260px", md: '300px', lg: "350px"}} mb="10px">{props.theText}</Text>
