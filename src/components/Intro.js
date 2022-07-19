@@ -12,7 +12,7 @@ const Intro = props => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return(
-    <Box bgImage={ colorMode === 'light' ? 'light-sky.jpeg' : 'dark-sky.jpeg' } bgSize='cover'>
+    <Box bgImage={ colorMode === 'light' ? 'light-sky.webp' : 'dark-sky.webp' } bgSize='cover'>
       {/* <Box display={{base: 'none', '2xl': 'inherit'}} position='absolute' top='0' right='0' filter={useColorModeValue('brightness(80%)', 'brightness(30%)')}>
         <video autoPlay loop muted playsInline style={{ objectFit: 'cover', width: '100%', minHeight: '100vh' }}>
           <source src='bgVideo.webm' type="video/webm" />
