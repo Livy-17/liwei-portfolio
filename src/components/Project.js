@@ -1,6 +1,7 @@
 import React from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, useColorModeValue, useColorMode, Accordion, AccordionButton, AccordionItem, AccordionPanel, AccordionIcon, Box, Flex, Heading, Text, Image, Button } from "@chakra-ui/react";
+import { BsGithub } from 'react-icons/bs';
 
 const Project = props => {
 
@@ -20,7 +21,7 @@ const Project = props => {
         </Flex>
 
         <Flex justifyContent="center">
-          <Button onClick={onOpen} display={{base: "block", lg: "none"}} bg={useColorModeValue('#c1cbd7', '#656176')} w="200px" mt='10px'>Case Study</Button>
+          <Button onClick={onOpen} display={{base: "block", lg: "none"}} bg={useColorModeValue('#c1cbd7', '#656176')} w="200px" mt='10px' _focus={{ border: 'none' }}>Case Study</Button>
           <Modal isOpen={isOpen} onClose={onClose} size="xs" isCentered="true">
             <ModalOverlay />
             <ModalContent>
@@ -36,10 +37,19 @@ const Project = props => {
                 </Box>
               </ModalBody>
               <ModalFooter>
-                <Button onClick={onClose} mr="20px" size="sm">Close</Button>
-                <a href={props.LiveLink}>
-                  <Button size="sm">Open</Button>
-                </a>
+                <Flex w='100%' justifyContent='space-between'>
+                  <Button onClick={onClose} size="sm" bg={useColorModeValue('#c1cbd7', '#656176')} _focus={{ border: 'none' }}>Close</Button>
+                  <Flex alignItems='center' gap='15px'>
+                    <a href={props.LiveLink}>
+                      <Button size="sm" bg={useColorModeValue('#c1cbd7', '#656176')} _focus={{ border: 'none' }}>Open</Button>
+                    </a>
+                    <a href={props.github}>
+                      <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg={useColorModeValue('#c1cbd7', '#656176')}>
+                        <BsGithub />
+                      </Flex>
+                    </a>
+                  </Flex>
+                </Flex>
               </ModalFooter>
             </ModalContent>
           </Modal>
@@ -62,9 +72,16 @@ const Project = props => {
                   ))}
                 </Box>
                 <Text fontSize='xl' fontWeight='bold' mb='10px'>See Live</Text>
-                <a href={props.LiveLink} target='_blank' rel='noreferrer'>
-                  <Button w='150px' _focus={{border: "none"}} _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>Live Link</Button>
-                </a>
+                <Flex alignItems='center' gap='15px'>
+                  <a href={props.LiveLink} target='_blank' rel='noreferrer'>
+                    <Button w='150px' _focus={{border: "none"}} _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>Live Link</Button>
+                  </a>
+                  <a href={props.github} target='_black'>
+                    <Flex justifyContent='center' alignItems='center' h='40px' w='40px' borderRadius='5px' _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>
+                      <BsGithub />
+                    </Flex>
+                  </a>
+                </Flex>
               </Box>
             </AccordionPanel>
           </AccordionItem>

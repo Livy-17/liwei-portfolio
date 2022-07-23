@@ -21,6 +21,7 @@ const Projects = props => {
         ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Chakra UI', 'Next JS', 'Git', 'Github', 'Netlify', 'Bayut API']}
         LiveLink='https://moving.liweichen.info'
         DarkMode={colorMode}
+        github='https://github.com/Livy-17/property-website'
         />
       </Box>
       <Box data-aos='flip-right'>
@@ -32,6 +33,7 @@ const Projects = props => {
         ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Next JS', 'Git', 'Github', 'Netlify', 'Steaming Availability API']}
         LiveLink='https://what-to-watch.liweichen.info'
         DarkMode={colorMode}
+        github='https://github.com/Livy-17/what-to-watch'
         />
       </Box>
       <Box data-aos='flip-left'>
@@ -43,6 +45,7 @@ const Projects = props => {
         ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Chakra UI', 'Commerce JS', 'Stripe', 'Git', 'Github', 'Netlify']}
         LiveLink='https://epic-shoes.liweichen.info'
         DarkMode={colorMode}
+        github='https://github.com/Livy-17/online-shop'
         />
       </Box>
         <Project
@@ -53,6 +56,7 @@ const Projects = props => {
         ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Material UI', 'Git', 'Github', 'Netlify', 'Google Map API', 'Trip Advisor API']}
         LiveLink='https://where-to.liweichen.info'
         DarkMode={colorMode}
+        github='https://github.com/Livy-17/where-to'
         />
       <Box data-aos='flip-right'>
       </Box>

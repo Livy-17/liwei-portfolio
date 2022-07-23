@@ -17,7 +17,7 @@ const Contact = props => {
           <input type="email" name="email" id='email' placeholder="" required style={{ display: 'block', marginBottom: '20px', border: 'solid 1px lightgray', width: '100%', height: '40px', borderRadius: '5px', padding: '3px 0 0 15px' }} />
           <label htmlFor='message' style={{ display: 'block', fontWeight: 'bold', marginBottom: '20px' }}>Message</label>
           <textarea name='message' id='message' placeholder="(Optional)" style={{ display: 'block', marginBottom: '20px', border: 'solid 1px lightgray', width: '100%', height: '80px', borderRadius: '5px', padding: '10px 0 0 15px' }} />
-          <button type="submit" style={{ display: 'block', margin: '30px 0 0 auto', width: '120px', height: '40px', backgroundColor: useColorModeValue('#edf2f7',''), borderRadius: '5px' }}>Send</button>
+          <button type="submit" style={{ display: 'block', margin: '30px 0 0 auto', width: '120px', height: '40px', backgroundColor: useColorModeValue('#c1cbd7','#656176'), borderRadius: '5px' }}>Send</button>
           <input type="hidden" name="_next" value='https://www.liweichen.info/submitted' />
         </form>
       </Box>
