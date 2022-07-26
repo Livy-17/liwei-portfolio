@@ -26,14 +26,14 @@ const Projects = props => {
       </Box>
       <Box data-aos='flip-right'>
         <Project
-        ProjectName='WhatToWatch'
-        theHeading='WhatToWatch'
-        theText='Netflix, Prime, Disney, HBO, Hulu and many others. Lookup which shows are available on streaming services across more than 20 countries.'
-        ProjectDescription='By choosing your country, you can explore which streaming services are available in your country, and what movies are available in each service. You can also click the movies to see their details.'
-        ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Next JS', 'Git', 'Github', 'Netlify', 'Steaming Availability API']}
-        LiveLink='https://what-to-watch.liweichen.info'
+        ProjectName='WhereTo'
+        theHeading='WhereTo'
+        theText="Realtime Hotels, Restaurants, Attractions picks for you."
+        ProjectDescription='WhereTo shows the information about the hotels, restaurants and attractions near you. Make sure to allow your browser to use your location. You can filter the destinations by rating. You can also change your exploration area by using map or search bar.'
+        ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Material UI', 'Git', 'Github', 'Netlify', 'Google Map API', 'Trip Advisor API']}
+        LiveLink='https://where-to.liweichen.info'
         DarkMode={colorMode}
-        github='https://github.com/Livy-17/what-to-watch'
+        github='https://github.com/Livy-17/where-to'
         />
       </Box>
       <Box data-aos='flip-left'>
@@ -48,17 +48,17 @@ const Projects = props => {
         github='https://github.com/Livy-17/online-shop'
         />
       </Box>
-        <Project
-        ProjectName='WhereTo'
-        theHeading='WhereTo'
-        theText="Realtime Hotels, Restaurants, Attractions picks for you."
-        ProjectDescription='WhereTo shows the information about the hotels, restaurants and attractions near you. Make sure to allow your browser to use your location. You can filter the destinations by rating. You can also change your exploration area by using map or search bar.'
-        ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Material UI', 'Git', 'Github', 'Netlify', 'Google Map API', 'Trip Advisor API']}
-        LiveLink='https://where-to.liweichen.info'
-        DarkMode={colorMode}
-        github='https://github.com/Livy-17/where-to'
-        />
       <Box data-aos='flip-right'>
+        <Project
+        ProjectName='WhatToWatch'
+        theHeading='WhatToWatch'
+        theText='Netflix, Prime, Disney, HBO, Hulu and many others. Lookup which shows are available on streaming services across more than 20 countries.'
+        ProjectDescription='By choosing your country, you can explore which streaming services are available in your country, and what movies are available in each service. You can also click the movies to see their details.'
+        ToolsUsed={['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Next JS', 'Git', 'Github', 'Netlify', 'Steaming Availability API']}
+        LiveLink='https://what-to-watch.liweichen.info'
+        DarkMode={colorMode}
+        github='https://github.com/Livy-17/what-to-watch'
+        />
       </Box>
     </Flex>
   )
