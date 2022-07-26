@@ -22,6 +22,7 @@ const Projects = props => {
         LiveLink='https://moving.liweichen.info'
         DarkMode={colorMode}
         github='https://github.com/Livy-17/property-website'
+        pwa={false}
         />
       </Box>
       <Box data-aos='flip-right'>
@@ -34,6 +35,7 @@ const Projects = props => {
         LiveLink='https://where-to.liweichen.info'
         DarkMode={colorMode}
         github='https://github.com/Livy-17/where-to'
+        pwa={true}
         />
       </Box>
       <Box data-aos='flip-left'>
@@ -46,6 +48,7 @@ const Projects = props => {
         LiveLink='https://epic-shoes.liweichen.info'
         DarkMode={colorMode}
         github='https://github.com/Livy-17/online-shop'
+        pwa={false}
         />
       </Box>
       <Box data-aos='flip-right'>
@@ -58,6 +61,7 @@ const Projects = props => {
         LiveLink='https://what-to-watch.liweichen.info'
         DarkMode={colorMode}
         github='https://github.com/Livy-17/what-to-watch'
+        pwa={false}
         />
       </Box>
     </Flex>

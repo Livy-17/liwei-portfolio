@@ -37,19 +37,141 @@ const Project = props => {
                 </Box>
               </ModalBody>
               <ModalFooter>
+                {!props.pwa ?
+                colorMode === 'light' ?
                 <Flex w='100%' justifyContent='space-between'>
-                  <Button onClick={onClose} size="sm" bg={useColorModeValue('#c1cbd7', '#656176')} _focus={{ border: 'none' }}>Close</Button>
+                  <Button onClick={onClose} size="sm" bg='#c1cbd7' _focus={{ border: 'none' }}>Close</Button>
                   <Flex alignItems='center' gap='15px'>
                     <a href={props.LiveLink}>
-                      <Button size="sm" bg={useColorModeValue('#c1cbd7', '#656176')} _focus={{ border: 'none' }}>Open</Button>
+                      <Button size="sm" bg='#c1cbd7' _focus={{ border: 'none' }}>Open</Button>
                     </a>
                     <a href={props.github}>
-                      <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg={useColorModeValue('#c1cbd7', '#656176')}>
+                      <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg='#c1cbd7'>
                         <BsGithub />
                       </Flex>
                     </a>
                   </Flex>
                 </Flex>
+                :
+                <Flex w='100%' justifyContent='space-between'>
+                  <Button onClick={onClose} size="sm" bg='#656176' _focus={{ border: 'none' }}>Close</Button>
+                  <Flex alignItems='center' gap='15px'>
+                    <a href={props.LiveLink}>
+                      <Button size="sm" bg='#656176' _focus={{ border: 'none' }}>Open</Button>
+                    </a>
+                    <a href={props.github}>
+                      <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg='#656176'>
+                        <BsGithub />
+                      </Flex>
+                    </a>
+                  </Flex>
+                </Flex>
+
+                :
+
+                colorMode === 'light' ?
+                <Flex w='100%' flexDirection='column' justifyContent='center'>
+                  <Flex alignItems='center' justifyContent='space-between'>
+                    <Button onClick={onClose} size="sm" bg='#c1cbd7' _focus={{ border: 'none' }}>Close</Button>
+                    <Flex alignItems='center' gap='15px'>
+                      <a href={props.LiveLink}>
+                        <Button size="sm" bg='#c1cbd7' _focus={{ border: 'none' }}>Open</Button>
+                      </a>
+                      <a href={props.github}>
+                        <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg='#c1cbd7'>
+                          <BsGithub />
+                        </Flex>
+                      </a>
+                    </Flex>
+                  </Flex>
+                  <Box mt='15px'>
+                    { colorMode === 'light' ?
+                      props.pwa &&
+                      <Accordion allowToggle>
+                        <AccordionItem border="none">
+                          <AccordionButton borderRadius='5px' h='30px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                            <AccordionIcon ml='auto' />
+                          </AccordionButton>
+                          <AccordionPanel>
+                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                            <Text mb='10px'>The PWA will run like this</Text>
+                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                          </AccordionPanel>
+                        </AccordionItem>
+                      </Accordion>
+                      :
+                      props.pwa &&
+                      <Accordion allowToggle>
+                        <AccordionItem border="none">
+                          <AccordionButton borderRadius='5px' h='30px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                            <AccordionIcon ml='auto' />
+                          </AccordionButton>
+                          <AccordionPanel>
+                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                            <Text mb='10px'>The PWA will run like this</Text>
+                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                          </AccordionPanel>
+                        </AccordionItem>
+                      </Accordion>
+                    }
+                  </Box>
+                </Flex>
+                :
+                <Flex w='100%' flexDirection='column' justifyContent='center'>
+                  <Flex alignItems='center' justifyContent='space-between'>
+                    <Button onClick={onClose} size="sm" bg='#656176' _focus={{ border: 'none' }}>Close</Button>
+                    <Flex alignItems='center' gap='15px'>
+                      <a href={props.LiveLink}>
+                        <Button size="sm" bg='#656176' _focus={{ border: 'none' }}>Open</Button>
+                      </a>
+                      <a href={props.github}>
+                        <Flex justifyContent='center' alignItems='center' h='30px' w='30px' borderRadius='5px' bg='#656176'>
+                          <BsGithub />
+                        </Flex>
+                      </a>
+                    </Flex>
+                  </Flex>
+                  <Box mt='15px'>
+                    { colorMode === 'light' ?
+                      props.pwa &&
+                      <Accordion allowToggle>
+                        <AccordionItem border="none">
+                          <AccordionButton borderRadius='5px' h='30px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                            <AccordionIcon ml='auto' />
+                          </AccordionButton>
+                          <AccordionPanel>
+                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                            <Text mb='10px'>The PWA will run like this</Text>
+                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                          </AccordionPanel>
+                        </AccordionItem>
+                      </Accordion>
+                      :
+                      props.pwa &&
+                      <Accordion allowToggle>
+                        <AccordionItem border="none">
+                          <AccordionButton borderRadius='5px' h='30px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                            <AccordionIcon ml='auto' />
+                          </AccordionButton>
+                          <AccordionPanel>
+                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                            <Text mb='10px'>The PWA will run like this</Text>
+                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                          </AccordionPanel>
+                        </AccordionItem>
+                      </Accordion>
+                    }
+                  </Box>
+                </Flex>
+                }
               </ModalFooter>
             </ModalContent>
           </Modal>
@@ -72,15 +194,50 @@ const Project = props => {
                   ))}
                 </Box>
                 <Text fontSize='xl' fontWeight='bold' mb='10px'>See Live</Text>
-                <Flex alignItems='center' gap='15px'>
-                  <a href={props.LiveLink} target='_blank' rel='noreferrer'>
-                    <Button w='150px' _focus={{border: "none"}} _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>Live Link</Button>
-                  </a>
-                  <a href={props.github} target='_black'>
-                    <Flex justifyContent='center' alignItems='center' h='40px' w='40px' borderRadius='5px' _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>
-                      <BsGithub />
-                    </Flex>
-                  </a>
+                <Flex flexDirection='column' justifyContent='center'>
+                  <Flex alignItems='center' gap='15px' mb='15px'>
+                    <a href={props.LiveLink} target='_blank' rel='noreferrer'>
+                      <Button w='150px' _focus={{border: "none"}} _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>Live Link</Button>
+                    </a>
+                    <a href={props.github} target='_black'>
+                      <Flex justifyContent='center' alignItems='center' h='40px' w='40px' borderRadius='5px' _hover={{bg: "rgba(156, 168, 184, 1)"}} _active={{bg: "rgba(134, 150, 167, 1)"}} bg={useColorModeValue("rgba(193, 203, 215, 1)", "#656176")}>
+                        <BsGithub />
+                      </Flex>
+                    </a>
+                  </Flex>
+                  { colorMode === 'light' ?
+                    props.pwa &&
+                    <Accordion allowToggle>
+                      <AccordionItem border="none">
+                        <AccordionButton borderRadius='5px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                          <Text fontSize='16px' fontWeight='medium' ml='25px'>Progressive Web App</Text>
+                          <AccordionIcon ml='auto' />
+                        </AccordionButton>
+                        <AccordionPanel>
+                          <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                          <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                          <Text mb='10px'>The PWA will run like this</Text>
+                          <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
+                    :
+                    props.pwa &&
+                    <Accordion allowToggle>
+                      <AccordionItem border="none">
+                        <AccordionButton borderRadius='5px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                          <Text fontSize='16px' fontWeight='medium' ml='25px'>Progressive Web App</Text>
+                          <AccordionIcon ml='auto' />
+                        </AccordionButton>
+                        <AccordionPanel>
+                          <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                          <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                          <Text mb='10px'>The PWA will run like this</Text>
+                          <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
+                  }
                 </Flex>
               </Box>
             </AccordionPanel>
