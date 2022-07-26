@@ -85,39 +85,20 @@ const Project = props => {
                     </Flex>
                   </Flex>
                   <Box mt='15px'>
-                    { colorMode === 'light' ?
-                      props.pwa &&
-                      <Accordion allowToggle>
-                        <AccordionItem border="none">
-                          <AccordionButton borderRadius='5px' h='30px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
-                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
-                            <AccordionIcon ml='auto' />
-                          </AccordionButton>
-                          <AccordionPanel>
-                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
-                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
-                            <Text mb='10px'>The PWA will run like this</Text>
-                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
-                          </AccordionPanel>
-                        </AccordionItem>
-                      </Accordion>
-                      :
-                      props.pwa &&
-                      <Accordion allowToggle>
-                        <AccordionItem border="none">
-                          <AccordionButton borderRadius='5px' h='30px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
-                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
-                            <AccordionIcon ml='auto' />
-                          </AccordionButton>
-                          <AccordionPanel>
-                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
-                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
-                            <Text mb='10px'>The PWA will run like this</Text>
-                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
-                          </AccordionPanel>
-                        </AccordionItem>
-                      </Accordion>
-                    }
+                    <Accordion allowToggle>
+                      <AccordionItem border="none">
+                        <AccordionButton borderRadius='5px' h='30px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                          <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                          <AccordionIcon ml='auto' />
+                        </AccordionButton>
+                        <AccordionPanel>
+                          <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                          <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                          <Text mb='10px'>The PWA will run like this</Text>
+                          <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </Box>
                 </Flex>
                 :
@@ -136,39 +117,20 @@ const Project = props => {
                     </Flex>
                   </Flex>
                   <Box mt='15px'>
-                    { colorMode === 'light' ?
-                      props.pwa &&
-                      <Accordion allowToggle>
-                        <AccordionItem border="none">
-                          <AccordionButton borderRadius='5px' h='30px' bg='#c1cbd7' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
-                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
-                            <AccordionIcon ml='auto' />
-                          </AccordionButton>
-                          <AccordionPanel>
-                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
-                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
-                            <Text mb='10px'>The PWA will run like this</Text>
-                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
-                          </AccordionPanel>
-                        </AccordionItem>
-                      </Accordion>
-                      :
-                      props.pwa &&
-                      <Accordion allowToggle>
-                        <AccordionItem border="none">
-                          <AccordionButton borderRadius='5px' h='30px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
-                            <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
-                            <AccordionIcon ml='auto' />
-                          </AccordionButton>
-                          <AccordionPanel>
-                            <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
-                            <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
-                            <Text mb='10px'>The PWA will run like this</Text>
-                            <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
-                          </AccordionPanel>
-                        </AccordionItem>
-                      </Accordion>
-                    }
+                    <Accordion allowToggle>
+                      <AccordionItem border="none">
+                        <AccordionButton borderRadius='5px' h='30px' bg='#656176' _hover={{filter: 'brightness(90%)'}} transition='0.2s'>
+                          <Text fontSize='15px' fontWeight='medium'>Progressive Web App</Text>
+                          <AccordionIcon ml='auto' />
+                        </AccordionButton>
+                        <AccordionPanel>
+                          <Text mt='30px' mb='10px'>You can choose to install the PWA from the address bar</Text>
+                          <Image src={`screenshot-sm-${colorMode}.webp`} alt='screenshot1' mb='30px' w='100%' />
+                          <Text mb='10px'>The PWA will run like this</Text>
+                          <Image src={`screenshot-bg-${colorMode}.webp`} alt='screenshot2' w='100%' />
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </Box>
                 </Flex>
                 }
