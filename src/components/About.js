@@ -26,7 +26,7 @@ const About = props => {
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>HTML</Text>
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>CSS</Text>
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>Sass</Text>
-            <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>UI Frameworks</Text>
+            <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>UI/CSS Frameworks</Text>
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>JavaScript</Text>
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>TypeScript</Text>
             <Text display="inline-block" m="0 4px 4px 0" p="0 8px 0 8px" borderRadius="5px" bg={useColorModeValue("rgba(191, 191, 191, 1)", "black")}>React JS</Text>
